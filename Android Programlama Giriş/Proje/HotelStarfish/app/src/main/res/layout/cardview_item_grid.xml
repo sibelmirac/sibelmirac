@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="25dp"
+    app:cardPreventCornerOverlap="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="190dp"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@color/backgroundcolor"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/odabilgi" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_icon"
+            android:text="Oda Bilgileri"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_aciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/text_name"
+            android:text="Detaylı oda bilgileri için tıklayınız.."
+            android:textColor="#807777" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
